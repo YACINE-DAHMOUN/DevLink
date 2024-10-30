@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrivez-vous</title>
+</head>
+<body>
+    
+    <form action="Validation.php" method="POST">
+        <div>
+            <label for="firstname">Nom :</label>
+            <input type="text" id="firstname" name="user_firstname" aria-required="true" required>
+        </div>
+        <div>
+            <label for="lastname">Prénom :</label>
+            <input type="text" id="lastname" name="user_lastname" aria-required="true" required>
+        </div>
+        <div>
+            <label for="birthdate">Date de naissance :</label>
+            <input type="date" id="birthdate" name="user_birthdate" aria-required="true" required>
+        </div>
+        <div>
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="user_email" aria-required="true" required>
+        </div>
+        <div>
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="user_phone" aria-required="true" required>
+        </div>
+        <div>
+            <label for="gender">Sexe :</label>
+            <select id="gender" name="user_gender" aria-required="true" required>
+                <option value="">Selectionnez</option>
+                <option value="male">Homme</option>
+                <option value="female">Femme</option>
+                <option value="other">Autre</option>
+            </select>
+        </div>
+        <div class="Button">
+            <button type="submit">Inscription</button>
+        </div>
+    </form>
+</body>
+</html>
